@@ -1,7 +1,7 @@
 {
-  "name": "express-server-template-typescript",
+  "name": "express-template-svc-products",
   "version": "1.0.0",
-  "author": "HECTOR MINGUEZ",
+  "author": "RIPLEY SVC PRODUCTS",
   "license": "MIT",
   "main": "dist/app.js",
   "devDependencies": {
