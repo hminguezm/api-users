@@ -1,7 +1,7 @@
 {
-  "name": "express-template-svc-products",
+  "name": "ripley-api-user",
   "version": "1.0.0",
-  "author": "RIPLEY SVC PRODUCTS",
+  "author": "RIPLEY SVC",
   "license": "MIT",
   "main": "dist/app.js",
   "devDependencies": {
