@@ -1,8 +1,8 @@
-version: '3.6'
+version: '3.7'
 services:
   node:
     env_file:
-    - .env
+      - /app/secrets/ripley-api-user/app.local.env
     build:
       context: ./
       target: development
@@ -14,8 +14,17 @@ services:
       - web
     volumes:
       - ./:/app
+      - /app/secrets/dot_aws:/root/.aws
+      - /app/secrets/dot_ssh:/root/.ssh
     ports:
       - "3108:3000"
+      - "9113:9229"
+    labels:
+      - "traefik.port=4000"
+      - "traefik.backend=ripley-api-user"
+      - "traefik.frontend.rule=PathPrefixStrip:/api/user"
 
 networks:
   web:
+    external:
+      name: ripley-sellercenter-platform_webgateway
