@@ -1,11 +1,14 @@
-import express from 'express';
+import express, { Application } from 'express';
+import connect from './shared/infrastructure/config/MongoDB';
+import BaseRoutes from './shared/infrastructure/config/routers/BaseRoutes';
 
-const app: express.Application = express();
+const app: Application = express();
+const port: number = 3000 || process.env.PORT;
 
-app.get('/', (req, res) => {
-  res.send('Espress server');
-});
+connect();
 
-app.listen(3000, () => {
+app.use(BaseRoutes.routesConfig);
+
+app.listen(port, () => {
   console.log('Template app listening on port 3000!');
 });
