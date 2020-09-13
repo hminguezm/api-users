@@ -16,7 +16,9 @@ export class Routes {
 
   private findByIdUseCase = new FindByIdUseCase(this.sellerRepository);
 
-  private sellerCreatorUseCase = new SellerCreatorUseCase(this.sellerRepository);
+  private sellerCreatorUseCase = new SellerCreatorUseCase(
+    this.sellerRepository
+  );
 
   // Controllers
   private findAllSellersController: FindAllSellersController;
