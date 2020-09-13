@@ -1,6 +1,6 @@
 {
   "name": "ripley-api-user",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "RIPLEY SVC",
   "license": "MIT",
   "main": "dist/index.js",
