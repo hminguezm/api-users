@@ -1979,7 +1979,7 @@ bn.js@^5.1.1:
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.1.3.tgz#beca005408f642ebebea80b042b4d18d2ac0ee6b"
   integrity sha512-GkTiFpjFtUzU9CbMeJ5iazkCzGL3jrhzerzZIuqLABjbwRaFt33I9tUdSNryIptM+RxDet6OKm2WnLXzW51KsQ==
 
-body-parser@1.19.0:
+body-parser@1.19.0, body-parser@^1.19.0:
   version "1.19.0"
   resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.19.0.tgz#96b2709e57c9c4e09a6fd66a8fd979844f69f08a"
   integrity sha512-dhEPs72UPbDnAQJ9ZKMNTP6ptJaionhP5cBb541nXPlW60Jepo9RV/a4fX4XWW9CuFNK22krhrj1+rgzifNCsw==
@@ -3950,6 +3950,11 @@ http-signature@~1.2.0:
     assert-plus "^1.0.0"
     jsprim "^1.2.2"
     sshpk "^1.7.0"
+
+http-status@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/http-status/-/http-status-1.4.2.tgz#75406e829dca9bfdf92972c579b47cd6a58ab6c8"
+  integrity sha512-mBnIohUwRw9NyXMEMMv8/GANnzEYUj0Y8d3uL01zDWFkxUjYyZ6rgCaAI2zZ1Wb34Oqtbx/nFZolPRDc8Xlm5A==
 
 https-browserify@^1.0.0:
   version "1.0.0"
