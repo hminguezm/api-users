@@ -1,5 +1,5 @@
 export interface IWrite<T> {
-  create(data: T): Promise<boolean>;
+  create(body: T): Promise<T>;
   // update(id: string, data: T): Promise<boolean>;
   // delete(id: string): Promise<boolean>;
 }

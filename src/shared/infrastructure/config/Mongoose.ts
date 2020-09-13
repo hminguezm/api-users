@@ -8,6 +8,8 @@ export default (): void => {
         useNewUrlParser: true,
         useCreateIndex: true,
         useUnifiedTopology: true,
+        autoIndex: true,
+        poolSize: 10,
       })
       .then(() => console.log(`Successfully connected to ${db}`))
       .catch((error) => {

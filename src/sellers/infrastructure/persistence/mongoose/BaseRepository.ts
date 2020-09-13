@@ -1,14 +1,26 @@
 import { Document, Model } from 'mongoose';
 import { IRead } from '../../../domain/repositories/common/IRead';
+import { IWrite } from '../../../domain/repositories/common/IWrite';
 
-export class BaseRepository<T> implements IRead<T> {
+export class BaseRepository<T> implements IRead<T>, IWrite<T> {
   private _model: Model<Document>;
 
   constructor(schemaModel: Model<Document>) {
     this._model = schemaModel;
   }
 
-  find(): Promise<T[]> {
+  create = (body: T): Promise<T> => {
+    const response = new Promise<T>((resolve, reject) => {
+      this._model.create(body, (err: unknown, res: Document[]) => {
+        if (err) reject(err);
+        resolve(<T>(<unknown>res));
+      });
+    });
+
+    return response;
+  };
+
+  find = (): Promise<T[]> => {
     const response = new Promise<T[]>((resolve, reject) => {
       this._model.find({}, (err, res) => {
         console.log({ res, err });
@@ -18,9 +30,9 @@ export class BaseRepository<T> implements IRead<T> {
     });
 
     return response;
-  }
+  };
 
-  findById(id: string): Promise<T> {
+  findById = (id: string): Promise<T> => {
     const response = new Promise<T>((resolve, reject) => {
       this._model.findOne({ _id: id }).exec((err, res) => {
         if (err) reject(err);
@@ -29,5 +41,5 @@ export class BaseRepository<T> implements IRead<T> {
     });
 
     return response;
-  }
+  };
 }

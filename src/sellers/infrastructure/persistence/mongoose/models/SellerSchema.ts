@@ -5,10 +5,15 @@ interface ISellerSchema extends Document, ISeller {}
 
 const SellerSchema: Schema = new Schema(
   {
-    consumer: { type: String, required: true },
-    consumerUsername: { type: String, required: true },
+    consumer: {
+      type: String,
+      unique: true,
+      required: true,
+      lowercase: true,
+    },
+    consumer_username: { type: String, unique: true, required: true },
     vendors: [String],
-    shops: { type: Map, of: String, required: true },
+    shops: [Schema.Types.Mixed],
   },
   { collection: 'seller' }
 );
