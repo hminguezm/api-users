@@ -61,6 +61,18 @@
         "imports": "always-multiline",
         "objects": "always-multiline"
       }
+    ],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allowAfterThis": true
+      }
+    ],
+    "@typescript-eslint/no-empty-interface": [
+      "error",
+      {
+        "allowSingleExtends": true
+      }
     ]
   },
   "overrides": [],

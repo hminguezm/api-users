@@ -1,13 +1,19 @@
-# express-server-template-typescript
-A template with with EspressJS application running and [Docker](https://docker.com/).
 
-# Requirements
+<h1 align="center">
+  Ripley API users
+</h1>
 
-## .env file
+<p align="center">
+  A expressJS server application (NodeJS - Typescript) up [Docker](https://docker.com/) with Hexagonal Architecture.
+</p>
 
-The application includes several docker-compose configuration .env file for local environment
+</br>
 
-# Running
+# Running in local stages
+
+create a .env file configuration in de root file directory for local deploy
+
+and run
 
 ```
 yarn && yarn start:{dev|prod}
@@ -15,11 +21,12 @@ yarn && yarn start:{dev|prod}
 
 # Running with Docker
 
-## Run with default environment file
+### environments variables
 
-```
-docker-compose up -d --build
-```
+The application includes several docker-compose configuration file where you can change the env vars
+
+env_file:
+  - /app/secrets/ripley-api-user/app.{local|devel|production}.env
 
 ## Run with environment file
 
