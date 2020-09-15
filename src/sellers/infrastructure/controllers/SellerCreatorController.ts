@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
-import { IController } from './IController';
+import { IBaseController } from '../../../shared/infrastructure/controllers/IBaseController';
 import { SellerCreatorUseCase } from '../../application/use-cases/SellerCreatorUseCase';
 
-export class SellerCreatorController implements IController {
+export class SellerCreatorController implements IBaseController {
   private sellerCreatorUseCase: SellerCreatorUseCase;
 
   constructor(sellerCreatorUseCase: SellerCreatorUseCase) {

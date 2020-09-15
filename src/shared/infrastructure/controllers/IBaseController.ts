@@ -1,5 +1,5 @@
 import { RequestHandler } from 'express';
 
-export interface IController {
+export interface IBaseController {
   run: RequestHandler;
 }
