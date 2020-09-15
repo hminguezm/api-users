@@ -1,11 +1,14 @@
 export const AvailableKindOfSociety = Object.freeze({
   SOCIEDAD_POR_ACCIONES_SPA: 'Sociedad por Acciones (SpA)',
-  SOCIEDAD_DE_RESPONSABILIDAD_LIMITADA_LTDA: 'Sociedad de Responsabilidad Limitada (Ltda.)',
-  EMPRESA_INDIVIDIAL_RESPONSABILIDAD_LIMITADA_EIRL: 'Empresa Individual Responsabilidad Limitada (E.I.R.L)',
+  SOCIEDAD_DE_RESPONSABILIDAD_LIMITADA_LTDA:
+    'Sociedad de Responsabilidad Limitada (Ltda.)',
+  EMPRESA_INDIVIDIAL_RESPONSABILIDAD_LIMITADA_EIRL:
+    'Empresa Individual Responsabilidad Limitada (E.I.R.L)',
   SOCIEDAD_ANONIMA_SA: 'Sociedad Anónima (S.A.)',
   PERSONA_NATURAL: 'Persona Natural',
   SOCIEDAD_ANONIMA_CERRADA_SAC: 'Sociedad Anónima Cerrada (S.A.C.)',
-  SOCIEDAD_SOCIEDAD_DE_RESPONSABILIDAD_LIMITADA_SCRL: 'Sociedad Comercial de Responsabilidad Limitad (S.C.R.L.)',
+  SOCIEDAD_SOCIEDAD_DE_RESPONSABILIDAD_LIMITADA_SCRL:
+    'Sociedad Comercial de Responsabilidad Limitad (S.C.R.L.)',
   SOCIEDAD_CIVIL: 'Sociedad Civil',
   SOCIEDAD_COLECTIVA: 'Sociedad Colectiva',
   SOCIEDAD_EN_COMANDITA: 'Sociedad en Comandita',
