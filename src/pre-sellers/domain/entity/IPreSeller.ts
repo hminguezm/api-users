@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 export interface IPreSeller {
   registration_date: Date;
   seller_information: {
@@ -39,8 +40,8 @@ export interface IPreSeller {
     main_category: string;
     web_site: string;
     other_marketplace: Array<string>;
-    official_distributor: Boolean;
-    use_api: Boolean;
+    official_distributor: boolean;
+    use_api: boolean;
     inventory_available: string;
     kind_of_warehouse: string;
     return_warehouse_address: {
@@ -61,9 +62,9 @@ export interface IPreSeller {
     };
   };
   declarations: {
-    term_relationship: Boolean;
-    term_consultant: Boolean;
-    term_participation: Boolean;
+    term_relationship: boolean;
+    term_consultant: boolean;
+    term_participation: boolean;
   };
   status: string;
   consumer: string;

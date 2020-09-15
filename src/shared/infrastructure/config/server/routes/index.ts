@@ -13,6 +13,7 @@ import { PreSellerCreatorController } from '../../../../../pre-sellers/infrastru
 export class Routes {
   // repositories
   private sellerRepository: SellerRepository = new SellerRepository();
+
   private preSellerRepository: PreSellerRepository = new PreSellerRepository();
 
   // use cases
