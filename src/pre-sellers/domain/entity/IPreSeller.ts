@@ -1,6 +1,5 @@
 /* eslint-disable camelcase */
 export interface IPreSeller {
-  registration_date: Date;
   seller_information: {
     country: string;
     name: string;
@@ -68,4 +67,5 @@ export interface IPreSeller {
   };
   status: string;
   consumer: string;
+  registration_date: Date;
 }

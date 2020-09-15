@@ -21,8 +21,8 @@ services:
       - "9113:9229"
     labels:
       - "traefik.port=4000"
-      - "traefik.backend=ripley-api-user"
-      - "traefik.frontend.rule=PathPrefixStrip:/api/user"
+      - "traefik.backend=ripley-api-users"
+      - "traefik.frontend.rule=PathPrefixStrip:/api/users"
 
 networks:
   web:

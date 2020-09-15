@@ -10,7 +10,6 @@ interface IPreSellerSchema extends Document, IPreSeller {}
 
 const PreSellerSchema = new Schema(
   {
-    registration_date: { type: Date, default: Date.now },
     seller_information: {
       country: {
         type: String,
@@ -201,6 +200,7 @@ const PreSellerSchema = new Schema(
       default: TYPE_STATUS_SELLER.WAITING_DATA,
     },
     consumer: { type: String },
+    registration_date: { type: Date, default: Date.now },
   },
   { collection: 'pre_seller' }
 );

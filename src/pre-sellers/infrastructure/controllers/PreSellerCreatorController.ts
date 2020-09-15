@@ -16,7 +16,7 @@ export class PreSellerCreatorController implements IBaseController {
     try {
       await this.preSellerCreatorUseCase.create(body);
     } catch (error) {
-      res.status(httpStatus.INTERNAL_SERVER_ERROR).json(error);
+      res.status(httpStatus.BAD_REQUEST).json(error);
     }
 
     res.status(httpStatus.CREATED).send();
