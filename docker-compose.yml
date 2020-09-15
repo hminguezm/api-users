@@ -2,7 +2,7 @@ version: '3.7'
 services:
   node:
     env_file:
-      - /app/secrets/ripley-api-user/app.local.env
+      - .env
     build:
       context: ./
       target: development

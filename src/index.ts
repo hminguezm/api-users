@@ -1,5 +1,7 @@
 import server from './shared/infrastructure/config/server';
 import connect from './shared/infrastructure/config/Mongoose';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require('dotenv').config();
 
 connect();
 
