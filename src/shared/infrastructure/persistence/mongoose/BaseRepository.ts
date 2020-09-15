@@ -1,6 +1,6 @@
 import { Document, Model } from 'mongoose';
-import { IRead } from '../../../domain/repositories/common/IRead';
-import { IWrite } from '../../../domain/repositories/common/IWrite';
+import { IRead } from '../../../domain/repositories/IRead';
+import { IWrite } from '../../../domain/repositories/IWrite';
 
 export class BaseRepository<T> implements IRead<T>, IWrite<T> {
   private _model: Model<Document>;
