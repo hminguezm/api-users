@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
-import { IController } from './IController';
+import { IBaseController } from '../../../shared/infrastructure/controllers/IBaseController';
 import { FindByIdUseCase } from '../../application/use-cases/FindByIdUseCase';
 
-export class FindSellerByIdController implements IController {
+export class FindSellerByIdController implements IBaseController {
   private findByIdUseCase: FindByIdUseCase;
 
   constructor(findByIdUseCase: FindByIdUseCase) {
