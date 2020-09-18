@@ -1,8 +1,8 @@
 import { Document, Model } from 'mongoose';
 import { IRead } from '../../../domain/repositories/IRead';
-import { IWrite } from '../../../domain/repositories/IWrite';
+import { ISend } from '../../../domain/repositories/ISend';
 
-export class BaseRepository<T> implements IRead<T>, IWrite<T> {
+export class BaseRepository<T> implements IRead<T>, ISend<T> {
   private _model: Model<Document>;
 
   constructor(schemaModel: Model<Document>) {

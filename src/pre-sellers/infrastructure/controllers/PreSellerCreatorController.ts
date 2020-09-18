@@ -1,12 +1,12 @@
-import { Request, Response } from 'express';
 import httpStatus from 'http-status';
+import { Request, Response } from 'express';
 import { IBaseController } from '../../../shared/infrastructure/controllers/IBaseController';
-import { PreSellerCreatorUseCase } from '../../application/use-cases/PreSellerCreatorUseCase';
+import { IPreSellerCreatorUseCase } from '../../application/use-cases/interfaces/IPreSellerCreatorUseCase';
 
 export class PreSellerCreatorController implements IBaseController {
-  private preSellerCreatorUseCase: PreSellerCreatorUseCase;
+  private preSellerCreatorUseCase: IPreSellerCreatorUseCase;
 
-  constructor(preSellerCreatorUseCase: PreSellerCreatorUseCase) {
+  constructor(preSellerCreatorUseCase: IPreSellerCreatorUseCase) {
     this.preSellerCreatorUseCase = preSellerCreatorUseCase;
   }
 
