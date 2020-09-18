@@ -6,7 +6,10 @@ export class SendPreSellerToKafka implements IPreSellerCreatorUseCase {
   private preSellerCreatorUseCase: IPreSellerCreatorUseCase;
   private readonly queueRepository: IQueueRepository<IPreSeller>;
 
-  constructor(preSellerCreatorUseCase: IPreSellerCreatorUseCase, queueRepository: IQueueRepository<IPreSeller>) {
+  constructor(
+    preSellerCreatorUseCase: IPreSellerCreatorUseCase,
+    queueRepository: IQueueRepository<IPreSeller>
+  ) {
     this.preSellerCreatorUseCase = preSellerCreatorUseCase;
     this.queueRepository = queueRepository;
   }

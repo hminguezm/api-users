@@ -30,28 +30,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e693161f-9ab6-4697-9436-0495059a3655" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ripley-api-users.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pre-sellers/domain/entity/IMessage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pre-sellers/domain/repositories/IQueueRepository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pre-sellers/infrastructure/queues/PreSellerProducerRepository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/domain/repositories/IQueueRepository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/domain/repositories/ISend.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/infrastructure/queue/KafkaProducerBaseRepository.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pre-sellers/infrastructure/controllers/PreSellerCreatorController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pre-sellers/infrastructure/controllers/PreSellerCreatorController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sellers/domain/repositories/ISellersRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sellers/domain/repositories/ISellersRepository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/domain/repositories/IWrite.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/domain/repositories/IWrite.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pre-sellers/application/kafka/SendPreSellerToKafka.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pre-sellers/application/kafka/SendPreSellerToKafka.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/infrastructure/config/server/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/infrastructure/config/server/routes/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/infrastructure/persistence/mongoose/BaseRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/infrastructure/persistence/mongoose/BaseRepository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infrastructure/queue/KafkaProducerBaseRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/infrastructure/queue/KafkaProducerBaseRepository.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +139,8 @@
       <workItem from="1600203481165" duration="41576000" />
       <workItem from="1600313022719" duration="1061000" />
       <workItem from="1600314193922" duration="100000" />
-      <workItem from="1600348828429" duration="8566000" />
+      <workItem from="1600348828429" duration="9026000" />
+      <workItem from="1600444156132" duration="1945000" />
     </task>
     <servers />
   </component>
@@ -175,10 +160,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="158" y="62" width="705" height="556" key="#ESLint" timestamp="1600388530554">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="1491" y="91" width="695" height="1459" key="#ESLint" timestamp="1600448300943">
+      <screen x="1366" y="0" width="1080" height="1920" />
     </state>
-    <state x="158" y="62" width="705" height="556" key="#ESLint/0.27.1366.741/1366.0.1080.1920@0.27.1366.741" timestamp="1600388530554" />
+    <state x="158" y="62" width="695" height="563" key="#ESLint/0.27.1366.741/1366.0.1080.1920@0.27.1366.741" timestamp="1600447446557" />
+    <state x="1491" y="91" width="695" height="1459" key="#ESLint/0.27.1366.741/1366.0.1080.1920@1366.0.1080.1920" timestamp="1600448300943" />
     <state x="502" y="289" width="361" height="224" key="#ESLint/0.27.1366.741@0.27.1366.741" timestamp="1600222700702" />
     <state x="283" y="116" width="720" height="546" key="#ESLint/0.27.2446.1893@0.27.2446.1893" timestamp="1600298947187" />
     <state x="340" y="222" width="675" height="357" key="#Notifications" timestamp="1600198150451">

@@ -35,13 +35,17 @@ export class KafkaProducerBaseRepository<T> implements IQueueRepository<T> {
     this.admin = this.client.admin(adminOptions);
   }
 
-  private sendMessage = async (topic: string, payload: T): Promise<RecordMetadata[] | void> => {
+  private sendMessage = async (
+    topic: string,
+    payload: T
+  ): Promise<RecordMetadata[] | void> => {
     const producer = this.client.producer();
     await producer.connect();
-    const sendResponse = await producer.send({
-      topic,
-      messages: [{ value: JSON.stringify(payload) }],
-    })
+    const sendResponse = await producer
+      .send({
+        topic,
+        messages: [{ value: JSON.stringify(payload) }],
+      })
       .then((response) => {
         console.log(response);
         return response;
@@ -53,8 +57,9 @@ export class KafkaProducerBaseRepository<T> implements IQueueRepository<T> {
 
   create(body: T): void {
     if (this.topic != null) {
-      this.sendMessage(this.topic, body)
-        .catch((e) => console.error(`Error producer ${e.message}`));
+      this.sendMessage(this.topic, body).catch((e) =>
+        console.error(`Error producer ${e.message}`)
+      );
     }
   }
 }

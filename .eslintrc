@@ -57,7 +57,7 @@
       {
         "arrays": "always-multiline",
         "exports": "always-multiline",
-        "functions": "never",
+        "functions": "always-multiline",
         "imports": "always-multiline",
         "objects": "always-multiline"
       }
@@ -80,7 +80,8 @@
       {
         "exceptAfterSingleLine": true
       }
-    ]
+    ],
+    "no-useless-constructor": "off"
   },
   "overrides": [],
   "settings": {
