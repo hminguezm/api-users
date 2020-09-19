@@ -33,8 +33,8 @@ export class Routes {
 
   // init queue KAFKA_PRESELLER
   protected clientId: string = process.env.KAFKA_PRESELLER_CLIENTID || '';
-  protected brokers: Array<string> = process.env.KAFKA_PRESELLER_BROKERS
-    ? process.env.KAFKA_PRESELLER_BROKERS.split(',')
+  protected brokers: Array<string> = process.env.KAFKA_PRESELLER_BROKERS ?
+    process.env.KAFKA_PRESELLER_BROKERS.split(',')
     : [];
 
   protected topic: string =

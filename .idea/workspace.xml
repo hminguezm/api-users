@@ -30,14 +30,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e693161f-9ab6-4697-9436-0495059a3655" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pre-sellers/domain/entity/IMessage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pre-sellers/domain/entity/IMessage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pre-sellers/infrastructure/persistence/mongoose/models/PreSellerSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pre-sellers/infrastructure/persistence/mongoose/models/PreSellerSchema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pre-sellers/infrastructure/queues/PreSellerProducerRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pre-sellers/infrastructure/queues/PreSellerProducerRepository.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/infrastructure/config/server/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/infrastructure/config/server/routes/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/infrastructure/queue/KafkaProducerBaseRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/infrastructure/queue/KafkaProducerBaseRepository.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +137,8 @@
       <workItem from="1600313022719" duration="1061000" />
       <workItem from="1600314193922" duration="100000" />
       <workItem from="1600348828429" duration="9026000" />
-      <workItem from="1600444156132" duration="4606000" />
+      <workItem from="1600444156132" duration="4675000" />
+      <workItem from="1600525626894" duration="516000" />
     </task>
     <servers />
   </component>
