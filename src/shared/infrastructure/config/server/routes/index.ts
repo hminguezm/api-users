@@ -24,11 +24,11 @@ export class Routes {
   private findByIdUseCase = new FindByIdUseCase(this.sellerRepository);
 
   private sellerCreatorUseCase = new SellerCreatorUseCase(
-    this.sellerRepository,
+    this.sellerRepository
   );
 
   private preSellerCreatorUseCase = new PreSellerCreatorUseCase(
-    this.preSellerRepository,
+    this.preSellerRepository
   );
 
   // init queue KAFKA_PRESELLER
@@ -38,19 +38,19 @@ export class Routes {
     : [];
 
   protected topic: string =
-    process.env.KAFKA_PRESELLER_TOPIC
-    || '_onboarding.products-notifier.pre-seller-saved';
+    process.env.KAFKA_PRESELLER_TOPIC ||
+    '_onboarding.products-notifier.pre-seller-saved';
 
   private preSellerProducerRepository = new PreSellerProducerRepository(
     this.clientId,
     this.brokers,
-    this.topic,
+    this.topic
   );
   // end queue KAFKA_PRESELLER
 
   private sendPreSellerToKafka = new SendPreSellerToKafka(
     this.preSellerCreatorUseCase,
-    this.preSellerProducerRepository,
+    this.preSellerProducerRepository
   );
 
   // Controllers
@@ -64,16 +64,16 @@ export class Routes {
 
   constructor() {
     this.findAllSellersController = new FindAllSellersController(
-      this.findAllUseCase,
+      this.findAllUseCase
     );
     this.findSellerByIdController = new FindSellerByIdController(
-      this.findByIdUseCase,
+      this.findByIdUseCase
     );
     this.sellerCreatorController = new SellerCreatorController(
-      this.sellerCreatorUseCase,
+      this.sellerCreatorUseCase
     );
     this.preSellerCreatorController = new PreSellerCreatorController(
-      this.sendPreSellerToKafka,
+      this.sendPreSellerToKafka
     );
   }
 

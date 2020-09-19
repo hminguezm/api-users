@@ -50,16 +50,16 @@ export class KafkaProducerBaseRepository<T> implements IQueueRepository<T> {
         console.log(response);
         return response;
       })
-      .catch((e) => console.error(`Error producer ${e.message}`));
+      .catch((e) => console.log(`Error producer ${e.message}`));
     await producer.disconnect();
     return sendResponse;
   };
 
   create(body: T): void {
     if (this.topic != null) {
-      this.sendMessage(this.topic, body).catch((e) =>
-        console.error(`Error producer ${e.message}`)
-      );
+      this.sendMessage(this.topic, body).catch((e) => {
+        console.log(`Error producer ${e.message}`);
+      });
     }
   }
 }

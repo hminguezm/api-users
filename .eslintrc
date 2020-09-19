@@ -56,10 +56,10 @@
       "error",
       {
         "arrays": "always-multiline",
-        "exports": "always-multiline",
-        "functions": "always-multiline",
+        "objects": "always-multiline",
         "imports": "always-multiline",
-        "objects": "always-multiline"
+        "exports": "always-multiline",
+        "functions": "ignore"
       }
     ],
     "no-underscore-dangle": [
@@ -81,7 +81,16 @@
         "exceptAfterSingleLine": true
       }
     ],
-    "no-useless-constructor": "off"
+    "no-useless-constructor": "off",
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          ":": "before"
+        }
+      }
+    ]
   },
   "overrides": [],
   "settings": {

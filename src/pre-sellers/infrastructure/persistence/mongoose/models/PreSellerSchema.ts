@@ -204,5 +204,4 @@ const PreSellerSchema = new Schema(
   },
   { collection: 'pre_seller' }
 );
-
-export default mongoose.model<IPreSellerSchema>('pre_seller', PreSellerSchema);
+export default mongoose.model<IPreSellerSchema>('Pre_seller', PreSellerSchema);
