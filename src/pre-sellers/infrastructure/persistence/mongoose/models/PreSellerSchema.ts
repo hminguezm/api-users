@@ -1,8 +1,8 @@
 import mongoose, { Document, Schema } from 'mongoose';
 import { IPreSeller } from '../../../../domain/entity/IPreSeller';
 import {
-  AvailableKindOfSociety,
-  AvailableKindOfStore,
+  // AvailableKindOfSociety,
+  // AvailableKindOfStore,
   STATUS_DATA_SELLER,
   CONSUMER_GROUP,
 } from '../../../../domain/constants';
@@ -12,7 +12,7 @@ interface IPreSellerSchema extends Document, IPreSeller {}
 const PreSellerSchema = new Schema(
   {
     seller_information: {
-      name: { type: String, required: true},
+      name: { type: String, required: true },
       lastname: { type: String, required: true },
       document_number: { type: String, required: true, unique: true },
       email: {
