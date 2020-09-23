@@ -56,10 +56,10 @@
       "error",
       {
         "arrays": "always-multiline",
-        "exports": "always-multiline",
-        "functions": "never",
+        "objects": "always-multiline",
         "imports": "always-multiline",
-        "objects": "always-multiline"
+        "exports": "always-multiline",
+        "functions": "ignore"
       }
     ],
     "no-underscore-dangle": [
@@ -72,6 +72,23 @@
       "error",
       {
         "allowSingleExtends": true
+      }
+    ],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "no-useless-constructor": "off",
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          ":": "before"
+        }
       }
     ]
   },

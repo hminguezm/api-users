@@ -46,6 +46,7 @@
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "http-status": "^1.4.2",
+    "kafkajs": "^1.13.0",
     "mongoose": "^5.10.3"
   },
   "scripts": {
@@ -61,7 +62,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run prettier && yarn run lint",
+      "pre-commit": "yarn run prettier && yarn run lint --fix",
       "pre-push": "yarn run test"
     }
   }

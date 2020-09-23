@@ -23,8 +23,14 @@ export const AvailableKindOfStore = Object.freeze({
   TIENDA_FISICA_Y_ONLINE: 'Tienda física y online',
 });
 
-export const TYPE_STATUS_SELLER = Object.freeze({
+export const STATUS_DATA_SELLER = Object.freeze({
   WAITING_DATA: 'WAITING_DATA',
   VALID_DATA: 'VALID_DATA',
   REJECTED_DATA: 'REJECTED_DATA',
+});
+
+export const CONSUMER_GROUP = Object.freeze({
+  ADMIN: 'ADMIN',
+  PRE_SELLER: 'PRE_SELLER',
+  SELLER: 'SELLER:',
 });

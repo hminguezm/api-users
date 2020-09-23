@@ -1,6 +1,6 @@
 import { IRead } from '../../../shared/domain/repositories/IRead';
-import { IWrite } from '../../../shared/domain/repositories/IWrite';
+import { ISend } from '../../../shared/domain/repositories/ISend';
 
 export interface ISellersRepository<ISeller>
   extends IRead<ISeller>,
-    IWrite<ISeller> {}
+    ISend<ISeller> {}

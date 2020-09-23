@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:release" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e693161f-9ab6-4697-9436-0495059a3655" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ripley-api-users.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pre-sellers/application/kafka/SendPreSellerToKafka.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pre-sellers/domain/entity/IMessage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pre-sellers/domain/repositories/IQueueRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pre-sellers/infrastructure/queues/PreSellerProducerRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/domain/repositories/IQueueRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/domain/repositories/ISend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/infrastructure/queue/KafkaProducerBaseRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pre-sellers/domain/constants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pre-sellers/domain/constants/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pre-sellers/infrastructure/controllers/PreSellerCreatorController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pre-sellers/infrastructure/controllers/PreSellerCreatorController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pre-sellers/infrastructure/persistence/mongoose/models/PreSellerSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pre-sellers/infrastructure/persistence/mongoose/models/PreSellerSchema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sellers/domain/repositories/ISellersRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/sellers/domain/repositories/ISellersRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/domain/repositories/IWrite.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/domain/repositories/IWrite.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infrastructure/config/server/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/infrastructure/config/server/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/infrastructure/persistence/mongoose/BaseRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/infrastructure/persistence/mongoose/BaseRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="9geapenv" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="sortByName" value="true" />
+  </component>
+  <component name="ProjectId" id="1hYpfxKZjVr3KhpZ84NsGjWeGq6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/shared/domain/repositories" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="$USER_HOME$/.nvm/versions/node/v12.13.0/bin/node" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.13.0/bin/node" />
+    <property name="nodejs_package_manager_path" value="/usr/share/yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shared/domain/repositories" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/shared/infrastructure/queue" />
+      <recent name="$PROJECT_DIR$/src/shared/infrastructure/persistence" />
+      <recent name="$PROJECT_DIR$/src/shared/infrastructure" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pre-sellers/infrastructure/queue" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.node: Compose Deployment">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.node: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="node" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e693161f-9ab6-4697-9436-0495059a3655" name="Default Changelist" comment="" />
+      <created>1600197987778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600197987778</updated>
+      <workItem from="1600197988992" duration="58000" />
+      <workItem from="1600198058193" duration="621000" />
+      <workItem from="1600201073426" duration="927000" />
+      <workItem from="1600203481165" duration="41576000" />
+      <workItem from="1600313022719" duration="1061000" />
+      <workItem from="1600314193922" duration="100000" />
+      <workItem from="1600348828429" duration="9026000" />
+      <workItem from="1600444156132" duration="4675000" />
+      <workItem from="1600525626894" duration="516000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1491" y="91" width="695" height="1459" key="#ESLint" timestamp="1600474892447">
+      <screen x="1366" y="0" width="1080" height="1920" />
+    </state>
+    <state x="158" y="62" width="695" height="563" key="#ESLint/0.27.1366.741/1366.0.1080.1920@0.27.1366.741" timestamp="1600447446557" />
+    <state x="1491" y="91" width="695" height="1459" key="#ESLint/0.27.1366.741/1366.0.1080.1920@1366.0.1080.1920" timestamp="1600474892447" />
+    <state x="502" y="289" width="361" height="224" key="#ESLint/0.27.1366.741@0.27.1366.741" timestamp="1600222700702" />
+    <state x="283" y="116" width="720" height="546" key="#ESLint/0.27.2446.1893@0.27.2446.1893" timestamp="1600298947187" />
+    <state x="340" y="222" width="675" height="357" key="#Notifications" timestamp="1600198150451">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="340" y="222" width="675" height="357" key="#Notifications/0.27.1366.741/1366.0.1080.1920@0.27.1366.741" timestamp="1600198150451" />
+    <state x="252" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600281040826">
+      <screen x="0" y="27" width="2446" height="1893" />
+    </state>
+    <state x="141" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741/1366.0.1080.1920@0.27.1366.741" timestamp="1600198308051" />
+    <state x="141" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1600203508721" />
+    <state x="252" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.2446.1893@0.27.2446.1893" timestamp="1600281040826" />
+    <state x="247" y="199" width="861" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600304797073">
+      <screen x="0" y="27" width="2446" height="1893" />
+    </state>
+    <state x="247" y="199" width="861" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.2446.1893@0.27.2446.1893" timestamp="1600304797073" />
+    <state x="763" y="116" width="383" height="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1600388548560">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="763" y="116" width="383" height="230" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741/1366.0.1080.1920@0.27.1366.741" timestamp="1600388548560" />
+    <state x="491" y="116" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1600205905441" />
+    <state x="1366" y="254" key="#com.intellij.ide.util.MemberChooser/0.27.2446.1893@0.27.2446.1893" timestamp="1600304199368" />
+    <state x="339" y="135" width="624" height="533" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600198038431">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="339" y="135" width="624" height="533" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1366.741/1366.0.1080.1920@0.27.1366.741" timestamp="1600198038431" />
+    <state x="308" y="152" width="739" height="497" key="MultipleFileMergeDialog" timestamp="1600832955818">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="308" y="152" width="739" height="497" key="MultipleFileMergeDialog/0.27.1366.741@0.27.1366.741" timestamp="1600832955818" />
+    <state x="202" y="31" width="900" height="737" key="SettingsEditor" timestamp="1600359831395">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="202" y="31" width="962" height="737" key="SettingsEditor/0.27.1366.741/1366.0.1080.1920@0.27.1366.741" timestamp="1600359831395" />
+    <state x="291" y="27" width="900" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1600314085964" />
+    <state x="293" y="27" width="770" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600302984135">
+      <screen x="0" y="27" width="2446" height="1893" />
+    </state>
+    <state x="293" y="27" width="770" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.2446.1893@0.27.2446.1893" timestamp="1600302984135" />
+    <state x="416" y="312" width="534" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600388076941">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="416" y="312" width="534" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741/1366.0.1080.1920@0.27.1366.741" timestamp="1600388076941" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1600209268115">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.27.1366.741@0.27.1366.741" timestamp="1600209268115" />
+    <state x="500" y="170" width="355" height="462" key="refactoring.ChangeSignatureDialog" timestamp="1600280613087">
+      <screen x="0" y="27" width="2446" height="1893" />
+    </state>
+    <state x="500" y="170" width="355" height="462" key="refactoring.ChangeSignatureDialog/0.27.2446.1893@0.27.2446.1893" timestamp="1600280613087" />
+  </component>
+</project>
