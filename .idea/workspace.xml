@@ -30,9 +30,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e693161f-9ab6-4697-9436-0495059a3655" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pre-sellers/domain/constants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pre-sellers/domain/constants/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pre-sellers/infrastructure/persistence/mongoose/models/PreSellerSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pre-sellers/infrastructure/persistence/mongoose/models/PreSellerSchema.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/infrastructure/config/server/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/infrastructure/config/server/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +58,15 @@
     <option name="sortByName" value="true" />
   </component>
   <component name="ProjectId" id="1hYpfxKZjVr3KhpZ84NsGjWeGq6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -156,6 +162,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1491" y="91" width="695" height="1459" key="#ESLint" timestamp="1600474892447">
