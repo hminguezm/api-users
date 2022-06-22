@@ -1,0 +1,33 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongConsumer
+metadata:
+  name: ${CI_PROJECT_NAME}-consumer
+  namespace: ${KUBE_NAMESPACE}
+  annotations:
+    kubernetes.io/ingress.class: api-gw-internal
+username: ${CI_PROJECT_NAME}-internal-consumer
+custom_id: ${CI_PROJECT_NAME}-internal-consumer
+credentials:
+  - ${CI_PROJECT_NAME}-key
+
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: ${CI_PROJECT_NAME}-apikey-internal
+  namespace: ${KUBE_NAMESPACE}
+  annotations:
+    kubernetes.io/ingress.class: api-gw-internal
+config:
+  key_names:
+    - x-api-key
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ${CI_PROJECT_NAME}-key
+  namespace: ${KUBE_NAMESPACE}
+stringData:
+  kongCredType: key-auth
+  key: ${TOKEN_AUTH}

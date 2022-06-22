@@ -1,0 +1,16 @@
+swagger:
+  name: "hex-architecture-template"
+  description: ""
+  license: MIT
+  version: "1.0.0"
+  basePath: api/
+  outputDirectory: ./docs
+  outputFormat: OpenApi_3
+  entryFile:
+    - ./src/**/controller/**/*
+  produces: [ controller/json ]
+  securityDefinitions:
+    Authenticator:
+      type: apiKey
+      in: header
+      name: Authorization

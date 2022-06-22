@@ -1,0 +1,10 @@
+.env
+.idea/
+.run/
+dist
+node_modules
+*.lcov
+coverage/
+yarn-error.log
+test-report.xml
+.DS_Store

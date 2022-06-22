@@ -1,0 +1,39 @@
+version: '3.7'
+services:
+  node:
+    env_file:
+    - .env
+    build:
+      context: ./
+      target: development
+    image: node:17.4.0-alpine3.14
+    working_dir: /app
+    command: yarn run start:dev
+    restart: always
+    networks:
+      - backend
+      - database
+    volumes:
+      - ./:/app
+    ports:
+      - "3108:3000"
+
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    restart: always
+    networks:
+      - database
+    volumes:
+      - ./:/mongodb
+    ports:
+      - "27017:27017"
+
+networks:
+  backend:
+    name: backend
+    external: true
+  database:
+    name: database
+    external: true
+

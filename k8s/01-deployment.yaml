@@ -1,0 +1,73 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ${CI_PROJECT_NAME}
+  namespace: ${NAMESPACE}
+  annotations:
+    description: 'Deployment ${CI_PROJECT_NAME}'
+    app.gitlab.com/app: ${CI_PROJECT_PATH_SLUG}
+    app.gitlab.com/env: ${CI_ENVIRONMENT_SLUG}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ${CI_PROJECT_NAME}
+  revisionHistoryLimit: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: ${CI_PROJECT_NAME}
+      annotations:
+        app.gitlab.com/app: ${CI_PROJECT_PATH_SLUG}
+        app.gitlab.com/env: ${CI_ENVIRONMENT_SLUG}
+    spec:
+      serviceAccountName: ${SERVICE_ACCOUNT_NAME}
+      automountServiceAccountToken: true
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - topologyKey: topology.kubernetes.io/zone
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - podAffinityTerm:
+                topologyKey: kubernetes.io/hostname
+              weight: 100
+      nodeSelector:
+        node.kubernetes.io/role: "user"
+      containers:
+        - name: ${CI_PROJECT_NAME}
+          image: ${CI_REGISTRY_IMAGE}:${CI_PIPELINE_IID}
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: ${APP_PORT}
+              name: http
+              protocol: TCP
+          envFrom:
+            - secretRef:
+                name: secret-${CI_PROJECT_NAME}
+          livenessProbe:
+            httpGet:
+              path: ${API_PATH_HEALTH}
+              port: ${APP_PORT}
+            initialDelaySeconds: 100
+            periodSeconds: 60
+            timeoutSeconds: 30
+          readinessProbe:
+            httpGet:
+              path: ${API_PATH_HEALTH}
+              port: ${APP_PORT}
+            initialDelaySeconds: 100
+            timeoutSeconds: 30
+          resources:
+            requests:
+              memory: ${RESOURCES_REQ_MEM}
+              cpu: ${RESOURCES_REQ_CPU}
+            limits:
+              memory: ${RESOURCES_LIMIT_MEM}
+              cpu: ${RESOURCES_LIMIT_CPU}
+      imagePullSecrets:
+        - name: gitlab-registry-credentials
