@@ -1,4 +1,4 @@
-# hex-architecture-template
+# api-users
 ### A expressJS server application (NodeJS - Typescript) up [Docker](https://docker.com/) with Hexagonal Architecture.
 
 # Requirement

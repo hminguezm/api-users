@@ -1,5 +1,5 @@
 {
-  "name": "hex-architecture-template",
+  "name": "api-users",
   "version": "1.0.0",
   "author": "HECTOR MINGUEZ",
   "license": "MIT",
@@ -52,6 +52,7 @@
     "express": "^4.18.1",
     "helmet": "^5.0.2",
     "http-status": "^1.5.2",
+    "mongoose": "^6.4.0",
     "morgan": "^1.10.0",
     "swagger-ui-express": "^4.3.0",
     "typescript-rest": "^3.0.4",
