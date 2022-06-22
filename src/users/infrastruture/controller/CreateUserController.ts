@@ -12,10 +12,13 @@ export class CreateUserController implements IBaseController {
 
   run = async (req: Request, res: Response): Promise<void> => {
     try {
-      const response = await this.useCase.create();
+      const { body } = req;
+      log.info({ body });
+
+      const response = await this.useCase.create(body);
       res.status(httpStatus.OK).json({ key: response });
     } catch (error) {
-      ErrorHandler.catch(error as Record<any, any> , res);
+      ErrorHandler.catch(error as Record<any, any>, res);
     }
   };
 }
