@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import { VersionHealth } from '../../../../../version';
-import { UserRepository } from '../../../../../users/infrastruture/persistence/mongoose/UserRepository';
+import { UserRepository } from '../../../../../users/infrastructure/persistence/mongoose/UserRepository';
 import { CreateUserUseCase } from '../../../../../users/application/use-case/CreateUserUseCase';
-import { CreateUserController } from '../../../../../users/infrastruture/controller/CreateUserController';
+import { CreateUserController } from '../../../../../users/infrastructure/controller/CreateUserController';
 
 export class Routes {
   public router: Router;

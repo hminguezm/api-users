@@ -1,10 +1,10 @@
 import { IUser } from '../../../src/users/domain/entity/IUser';
-import { UserRepository } from '../../../src/users/infrastruture/persistence/mongoose/UserRepository';
+import { UserRepository } from '../../../src/users/infrastructure/persistence/mongoose/UserRepository';
 import { BusinessErrorHandler } from '../../../src/shared/domain/service/BusinessErrorHandler';
 import { Exception } from '../../../src/shared/domain/service/Exception';
 import { CreateUserUseCase } from '../../../src/users/application/use-case/CreateUserUseCase';
 
-jest.mock('../../../user/infrastructure/persistence/UserRepository');
+jest.mock('../../../src/users/infrastructure/persistence/mongoose/UserRepository');
 
 describe('RequestHistoryCreateUseCase', () => {
   const body: IUser = { name: 'Hector Minguez', rut: '123456789' };
