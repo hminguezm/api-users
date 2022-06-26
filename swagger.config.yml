@@ -1,5 +1,5 @@
 swagger:
-  name: "hex-architecture-template"
+  name: "api-users"
   description: ""
   license: MIT
   version: "1.0.0"

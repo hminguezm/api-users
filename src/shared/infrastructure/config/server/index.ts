@@ -4,10 +4,12 @@ import cors, { CorsOptions, CorsOptionsDelegate } from 'cors';
 import helmet from 'helmet';
 import { Routes } from './routes';
 import { WinstonLogger } from '../logger';
+import { Mongoose } from '../mongoose/Mongoose';
 
 class App {
   public server: Application;
   public appRoutes: Routes = new Routes();
+  public database: Mongoose = new Mongoose();
   public log: WinstonLogger = new WinstonLogger();
   private BASE_PATH: string = process.env.BASE_PATH || '/api';
   private corsOptions: CorsOptions | CorsOptionsDelegate | undefined;
@@ -32,6 +34,7 @@ class App {
     this.server.use(helmet.frameguard({ action: 'deny' }));
     this.server.use(this.BASE_PATH, this.appRoutes.routes());
     this.log.initializer();
+    this.database.connection();
   }
 }
 

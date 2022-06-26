@@ -11,6 +11,6 @@ module.exports = {
     '^@tests/(.*)$': '<rootDir>/__tests__/$1',
   },
   collectCoverage: true,
-  coverageReporters: ['text'],
-  coverageDirectory: 'coverage/',
+  coverageReporters: ['json', 'text'],
+  coverageDirectory: 'coverage/'
 };
