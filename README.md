@@ -72,7 +72,5 @@ docker-compose -f docker-compose.yml up -d --build --force-recreate; docker-comp
 
 ## Reference Links
 
-+ [child_process Documentation](https://nodejs.org/api/child_process.html#child_processexecfilefile-args-options-callback)
-+ [elasticsearch-dump Documentation](https://github.com/elasticsearch-dump/elasticsearch-dump)
 + [docker-compose Documentation](https://docs.docker.com/compose/)
 + [typescript-rest-swagger Documentation](https://github.com/thiagobustamante/typescript-rest-swagger)
