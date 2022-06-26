@@ -1,4 +1,4 @@
-# api-users
+# API Users
 ### A expressJS server application (NodeJS - Typescript) up [Docker](https://docker.com/) with Hexagonal Architecture.
 
 # Requirement
@@ -17,6 +17,8 @@ NODE_ENV=${NODE_ENV}
 ENVIRONMENT_TYPE=${NODE_ENV}
 PORTSERVER=${APP_PORT}
 BASE_PATH=${BASE_PATH}
+CORS_ORIGIN=*${CORS_ORIGIN}
+MONGODB_URL=${MONGODB_URL}
 
 and run
 
